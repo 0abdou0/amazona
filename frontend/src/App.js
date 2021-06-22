@@ -148,7 +148,7 @@ function App() {
         <aside className={sidebarIsOpen ? "open" : ""}>
           <ul className="categories">
             <li>
-              <strong>Categories</strong>
+              <strong>Categories:</strong>
               <button
                 onClick={() => setSidebarIsOpen(false)}
                 className="close-sidebar"
@@ -167,6 +167,7 @@ function App() {
                   <Link
                     to={`/search/category/${c}`}
                     onClick={() => setSidebarIsOpen(false)}
+                    style={{ color: "#0ad6bb" }}
                   >
                     {c}
                   </Link>
@@ -256,7 +257,7 @@ function App() {
         </main>
         <footer className="row center">
           {userInfo && !userInfo.isAdmin && <ChatBox userInfo={userInfo} />}
-          <div>All right reserved</div>{" "}
+          <div>All right reserved to ABDOU</div>{" "}
         </footer>
       </div>
     </BrowserRouter>
