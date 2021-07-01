@@ -149,7 +149,7 @@ aside {
   background-color: #203040;
   z-index: 1000;
   transform: translateX(-30rem);
-  transition: all 0.5s;
+  transition: all 1.0s;
 }
 aside.open {
   transform: translateX(0);
